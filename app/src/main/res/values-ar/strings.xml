@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الحزب الاعظم</string>
+    <string name="arabic">عربى</string>
+    <string name="english">انجليزي</string>
+    <string name="introduction">المقدمة</string>
+    <string name="saturday">السبت</string>
+    <string name="sunday">الاحد</string>
+    <string name="monday">الاثتنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الاربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">الجمعة</string>
+    <string name="important_references">اهم المراجع</string>
+</resources>

@@ -1,5 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">الحزب الاعظم</string>
-    <string name="azkar">Azkar</string>
-    <string name="todo">TODO</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="introduction">Introduction</string>
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string name="important_references"> important_references</string>
 </resources>

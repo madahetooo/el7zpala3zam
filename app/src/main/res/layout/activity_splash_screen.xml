@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/mainLogo2"
-        android:src="@mipmap/logo"
+        android:src="@drawable/logo"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_250sdp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_100sdp"
-        android:contentDescription="@string/todo" />
+        />
 </RelativeLayout>

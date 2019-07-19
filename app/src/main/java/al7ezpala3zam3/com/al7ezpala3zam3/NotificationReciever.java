@@ -20,7 +20,7 @@ public class NotificationReciever extends BroadcastReceiver {
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         PendingIntent pendingIntent = PendingIntent.getActivity(context,100,intent1,PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context).
-                setSmallIcon(R.mipmap.logo).
+                setSmallIcon(R.drawable.logo).
                 setContentIntent(pendingIntent).
                 setContentText("اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ").
                 setContentTitle("اشعار يومى").

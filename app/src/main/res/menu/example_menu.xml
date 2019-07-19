@@ -5,13 +5,41 @@
 
 
     <item
-        android:id="@+id/azkarItem"
-        android:title="اذكار"
+        android:id="@+id/btn_intro"
+        android:title="@string/introduction"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Saturday"
+        android:title="@string/saturday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Sunday"
+        android:title="@string/sunday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Monday"
+        android:title="@string/monday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Tuesday"
+        android:title="@string/tuesday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Wednesday"
+        android:title="@string/wednesday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Thursday"
+        android:title="@string/thursday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_Friday"
+        android:title="@string/friday"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_importantReferences"
+        android:title="@string/important_references"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/notificationItem"
-        android:title="اشعار يومى"
-        app:showAsAction="never"/>
 
 </menu>
