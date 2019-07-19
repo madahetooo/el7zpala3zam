@@ -1,8 +1,10 @@
-package al7ezpala3zam3.com.al7ezpala3zam3;
+package al7ezpala3zam3.com.al7ezpala3zam3.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import al7ezpala3zam3.com.al7ezpala3zam3.R;
 
 public class SplashScreen extends AppCompatActivity {
 

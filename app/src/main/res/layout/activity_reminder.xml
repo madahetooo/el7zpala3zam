@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ece5d5"
+    tools:context=".utils.Reminder">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/no_alarm_set"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_timepicker"
+        style="@style/Button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#fff"
+        android:text="@string/open_time_picker" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/Button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textColor="#fff"
+        android:text="@string/cancel_alarm" />
+
+</RelativeLayout>

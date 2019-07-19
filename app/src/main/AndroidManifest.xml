@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="al7ezpala3zam3.com.al7ezpala3zam3">
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
+        android:fullBackupContent="true"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".PdfBook"></activity>
-        <activity android:name=".language" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreen">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".utils.Reminder"></activity>
+        <activity android:name=".ui.PdfBook" />
+        <activity android:name=".ui.language" />
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".utils.AlertReceiver" />
 
-        <receiver android:name=".NotificationReciever" />
     </application>
 
 </manifest>

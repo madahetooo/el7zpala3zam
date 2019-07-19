@@ -1,4 +1,4 @@
-package al7ezpala3zam3.com.al7ezpala3zam3;
+package al7ezpala3zam3.com.al7ezpala3zam3.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import al7ezpala3zam3.com.al7ezpala3zam3.R;
+import al7ezpala3zam3.com.al7ezpala3zam3.utils.Reminder;
+
 public class PdfBook extends AppCompatActivity implements View.OnClickListener {
 
-    Button introBtn,satBtn,sunBtn,monBtn,tueBtn,wedBtn,thuBtn,friBtn,importantReferencesBtn;
+    Button introBtn,satBtn,sunBtn,monBtn,tueBtn,wedBtn,thuBtn,friBtn,importantReferencesBtn,addReminderBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
         thuBtn=findViewById(R.id.btn_Thursday);
         friBtn=findViewById(R.id.btn_Friday);
         importantReferencesBtn=findViewById(R.id.btn_importantReferences);
+        addReminderBtn =findViewById(R.id.btn_addReminder);
 
         introBtn.setOnClickListener(this);
         satBtn.setOnClickListener(this);
@@ -32,6 +36,7 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
         wedBtn.setOnClickListener(this);
         thuBtn.setOnClickListener(this);
         friBtn.setOnClickListener(this);
+        addReminderBtn.setOnClickListener(this);
         importantReferencesBtn.setOnClickListener(this);
 
     }
@@ -91,6 +96,11 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
                 Intent importantReferences = new Intent(getBaseContext(), MainActivity.class);
                 importantReferences.putExtra("PDF", "importantReferences");
                 startActivity(importantReferences);
+                finish();
+                break;
+            case R.id.btn_addReminder:
+                Intent addReminder = new Intent(getBaseContext(), Reminder.class);
+                startActivity(addReminder);
                 finish();
                 break;
         }

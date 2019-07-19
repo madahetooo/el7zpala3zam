@@ -1,4 +1,4 @@
-package al7ezpala3zam3.com.al7ezpala3zam3;
+package al7ezpala3zam3.com.al7ezpala3zam3.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.github.barteksc.pdfviewer.PDFView;
+
+import al7ezpala3zam3.com.al7ezpala3zam3.R;
 
 public class MainActivity extends AppCompatActivity {
 

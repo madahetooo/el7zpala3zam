@@ -12,4 +12,8 @@
     <string name="thursday">الخميس</string>
     <string name="friday">الجمعة</string>
     <string name="important_references">اهم المراجع</string>
+    <string name="add_reminder">اضافه تذكير</string>
+    <string name="no_alarm_set">لم يتم اضافه تذكير</string>
+    <string name="open_time_picker">اختيار وقت محدد</string>
+    <string name="cancel_alarm">الغاء التذكير</string>
 </resources>

@@ -1,4 +1,4 @@
-package al7ezpala3zam3.com.al7ezpala3zam3;
+package al7ezpala3zam3.com.al7ezpala3zam3.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.Locale;
+
+import al7ezpala3zam3.com.al7ezpala3zam3.R;
 
 public class language extends AppCompatActivity implements View.OnClickListener {
 
