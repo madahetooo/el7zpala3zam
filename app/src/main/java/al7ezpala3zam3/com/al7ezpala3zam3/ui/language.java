@@ -79,14 +79,14 @@ public class language extends AppCompatActivity implements View.OnClickListener 
     public void onBackPressed() {
         new AlertDialog.Builder(this)
                 .setIcon(R.drawable.logo)
-                .setTitle("الخروج")
-                .setMessage("هل تريد الخروج ؟!")
-                .setPositiveButton("نعم", new DialogInterface.OnClickListener() {
+                .setTitle(R.string.exit)
+                .setMessage(R.string.Do_you_want_to_exit)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
                     }
-                }).setNegativeButton("لا", new DialogInterface.OnClickListener() {
+                }).setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
             }

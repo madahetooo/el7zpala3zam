@@ -16,4 +16,11 @@
     <string name="no_alarm_set">لم يتم اضافه تذكير</string>
     <string name="open_time_picker">اختيار وقت محدد</string>
     <string name="cancel_alarm">الغاء التذكير</string>
+    <string name="logo">ايقونه</string>
+    <string name="Reminder_Set_For"> تم التذكير بوقت</string>
+    <string name="Reminder_Canceled">تم الغاء التذكير</string>
+    <string name="exit">الخروج</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="Do_you_want_to_exit">Do you want to exit?</string>
 </resources>

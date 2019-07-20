@@ -134,7 +134,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/btn_importantReferences"
         android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         />
+
 
 </RelativeLayout>
 </ScrollView>

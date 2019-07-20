@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
-//        al7ezAla3zam.fromAsset("book.pdf").load();
 
 
     }
@@ -94,17 +93,6 @@ public class MainActivity extends AppCompatActivity {
                 al7ezAla3zam.fromAsset("importantReferences.pdf").load();
                 return true;
 
-
-//
-//            case R.id.notificationItem:
-//                Toast.makeText(this, "سيتم ارسال اشعار يومى", Toast.LENGTH_SHORT).show();
-//                Calendar calendar = Calendar.getInstance();
-//                calendar.set(Calendar.HOUR_OF_DAY,1);
-//                calendar.set(Calendar.MINUTE,10);
-//                Intent intent = new Intent(getApplicationContext(),NotificationReciever.class);
-//                PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
-//                AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-//                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),alarmManager.INTERVAL_DAY,pendingIntent);
 
         }
         return super.onOptionsItemSelected(item);

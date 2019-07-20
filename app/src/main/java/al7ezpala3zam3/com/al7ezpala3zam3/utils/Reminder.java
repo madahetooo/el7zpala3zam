@@ -57,7 +57,7 @@ public class Reminder extends AppCompatActivity implements TimePickerDialog.OnTi
     }
 
     private void updateTimeText(Calendar c) {
-        String timeText = "Reminder set for: ";
+        String timeText = getString(R.string.Reminder_Set_For);
         timeText += DateFormat.getTimeInstance(DateFormat.SHORT).format(c.getTime());
 
         mTextView.setText(timeText);
@@ -79,9 +79,10 @@ public class Reminder extends AppCompatActivity implements TimePickerDialog.OnTi
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(this, AlertReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+        String timeText = getString(R.string.Reminder_Canceled);
 
         alarmManager.cancel(pendingIntent);
-        mTextView.setText("Reminder canceled");
+        mTextView.setText(timeText);
     }
 
     @Override

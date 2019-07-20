@@ -43,8 +43,7 @@ public class NotificationHelper extends ContextWrapper {
     public NotificationCompat.Builder getChannelNotification() {
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("تذكير")
-                .setContentText("تذكير يومى لقراءه الورد اليومى")
+                .setContentText("تذكير لقراءه وردك اليومى")
                 .setSmallIcon(R.drawable.logo);
-
     }
 }
