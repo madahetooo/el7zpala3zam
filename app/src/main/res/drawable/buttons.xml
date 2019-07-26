@@ -5,6 +5,13 @@
             <corners android:radius="80dp" />
             <solid android:color="#9a8478" />
             <size android:height="20dp" />
+
+            <gradient
+
+                android:angle="90"
+                android:startColor="#c471ed"
+                android:endColor="#12c2e9"
+                android:type="linear"/>
         </shape>
     </item>
 </selector>

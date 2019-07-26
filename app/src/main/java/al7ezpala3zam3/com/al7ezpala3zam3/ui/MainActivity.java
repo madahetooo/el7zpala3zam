@@ -86,13 +86,20 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_Wednesday:
                 al7ezAla3zam.fromAsset("wednesday.pdf").load();
                 return true;
+            case R.id.btn_Thursday:
+                al7ezAla3zam.fromAsset("thursday.pdf").load();
+                return true;
             case R.id.btn_Friday:
                 al7ezAla3zam.fromAsset("friday.pdf").load();
                 return true;
             case R.id.btn_importantReferences:
                 al7ezAla3zam.fromAsset("importantReferences.pdf").load();
                 return true;
-
+            case R.id.btn_setting:
+                Intent intent =new Intent(MainActivity.this,language.class);
+                startActivity(intent);
+                finish();
+                return true;
 
         }
         return super.onOptionsItemSelected(item);

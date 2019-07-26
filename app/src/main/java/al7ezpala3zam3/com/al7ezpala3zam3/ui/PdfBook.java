@@ -1,7 +1,9 @@
 package al7ezpala3zam3.com.al7ezpala3zam3.ui;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -107,8 +109,20 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
     }
     @Override
     public void onBackPressed() {
-        Intent language =new Intent(getApplicationContext(),language.class);
-        startActivity(language);
-        finish();
+        new AlertDialog.Builder(this)
+                .setIcon(R.drawable.logo)
+                .setTitle(R.string.exit)
+                .setMessage(R.string.Do_you_want_to_exit)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                }).setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+            }
+        })
+                .show();
     }
 }

@@ -6,7 +6,7 @@ android {
         applicationId "al7ezpala3zam3.com.al7ezpala3zam3"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 3
+        versionCode 4
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         resConfigs "en", "ar"

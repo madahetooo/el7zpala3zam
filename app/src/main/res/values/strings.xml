@@ -11,7 +11,7 @@
     <string name="wednesday">wednesday</string>
     <string name="thursday">thursday</string>
     <string name="friday">friday</string>
-    <string name="important_references"> important_references</string>
+    <string name="important_references"> important references</string>
     <string name="add_reminder">Add Reminder</string>
     <string name="no_alarm_set">No Reminder set</string>
     <string name="open_time_picker">open time picker</string>
@@ -23,6 +23,7 @@
     <string name="yes">yes</string>
     <string name="no">no</string>
     <string name="Do_you_want_to_exit">Do you want to exit ?</string>
+    <string name="settings">Settings</string>
 
 
 </resources>

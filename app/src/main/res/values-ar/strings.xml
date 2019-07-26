@@ -22,5 +22,7 @@
     <string name="exit">الخروج</string>
     <string name="yes">نعم</string>
     <string name="no">لا</string>
-    <string name="Do_you_want_to_exit">Do you want to exit?</string>
+    <string name="Do_you_want_to_exit">هل تريد الخروج ؟</string>
+    <string name="settings">الاعدادات</string>
+
 </resources>

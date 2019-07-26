@@ -40,6 +40,10 @@
         android:id="@+id/btn_importantReferences"
         android:title="@string/important_references"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/btn_setting"
+        android:title="@string/settings"
+        app:showAsAction="never" />
 
 
 
