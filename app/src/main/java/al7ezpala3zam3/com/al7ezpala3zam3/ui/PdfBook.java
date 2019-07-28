@@ -110,7 +110,7 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
-                .setIcon(R.drawable.logo)
+                .setIcon(R.drawable.splashscreen)
                 .setTitle(R.string.exit)
                 .setMessage(R.string.Do_you_want_to_exit)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
