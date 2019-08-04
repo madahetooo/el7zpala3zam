@@ -33,18 +33,16 @@ public class language extends AppCompatActivity implements View.OnClickListener 
 
         switch (view.getId()) {
             case R.id.btn_En:
-
-                updateLanguage("en");
                 Intent intent = new Intent(getBaseContext(), PdfBook.class);
                 startActivity(intent);
+                updateLanguage("en");
                 finish();
-
                 break;
-            case R.id.btn_ar:
 
-                updateLanguage("ar");
+            case R.id.btn_ar:
                 Intent intent2 = new Intent(getBaseContext(), PdfBook.class);
                 startActivity(intent2);
+                updateLanguage("ar");
                 finish();
                 break;
         }
@@ -78,7 +76,7 @@ public class language extends AppCompatActivity implements View.OnClickListener 
         @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
-                .setIcon(R.drawable.logo)
+                .setIcon(R.drawable.splashscreen)
                 .setTitle(R.string.exit)
                 .setMessage(R.string.Do_you_want_to_exit)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {

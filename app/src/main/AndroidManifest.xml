@@ -16,7 +16,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".utils.Reminder"></activity>
-        <activity android:name=".ui.PdfBook" />
+        <activity android:name=".ui.PdfBook"
+                        android:launchMode="singleTop"/>
         <activity android:name=".ui.language" />
         <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.SplashScreen">

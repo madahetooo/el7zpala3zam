@@ -137,7 +137,18 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
         />
-
+    <Button
+        android:id="@+id/btn_setting"
+        style="@style/Button"
+        android:text="@string/settings"
+        android:textColor="#fff"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_addReminder"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
 
 </RelativeLayout>
 </ScrollView>

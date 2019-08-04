@@ -13,7 +13,7 @@ import al7ezpala3zam3.com.al7ezpala3zam3.utils.Reminder;
 
 public class PdfBook extends AppCompatActivity implements View.OnClickListener {
 
-    Button introBtn,satBtn,sunBtn,monBtn,tueBtn,wedBtn,thuBtn,friBtn,importantReferencesBtn,addReminderBtn;
+    Button introBtn,satBtn,sunBtn,monBtn,tueBtn,wedBtn,thuBtn,friBtn,importantReferencesBtn,addReminderBtn,goToSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
         friBtn=findViewById(R.id.btn_Friday);
         importantReferencesBtn=findViewById(R.id.btn_importantReferences);
         addReminderBtn =findViewById(R.id.btn_addReminder);
+        goToSettings=findViewById(R.id.btn_setting);
 
         introBtn.setOnClickListener(this);
         satBtn.setOnClickListener(this);
@@ -40,6 +41,7 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
         friBtn.setOnClickListener(this);
         addReminderBtn.setOnClickListener(this);
         importantReferencesBtn.setOnClickListener(this);
+        goToSettings.setOnClickListener(this);
 
     }
 
@@ -103,6 +105,11 @@ public class PdfBook extends AppCompatActivity implements View.OnClickListener {
             case R.id.btn_addReminder:
                 Intent addReminder = new Intent(getBaseContext(), Reminder.class);
                 startActivity(addReminder);
+                finish();
+                break;
+            case R.id.btn_setting:
+                Intent goToSettings = new Intent(getBaseContext(), language.class);
+                startActivity(goToSettings);
                 finish();
                 break;
         }
