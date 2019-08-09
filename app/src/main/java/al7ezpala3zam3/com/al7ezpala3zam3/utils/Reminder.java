@@ -72,7 +72,16 @@ public class Reminder extends AppCompatActivity implements TimePickerDialog.OnTi
             c.add(Calendar.DATE, 1);
         }
 
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
+        // alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+
+        // alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
+
+        alarmManager.set(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
+
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
+                c.getTimeInMillis(),
+                24*60*60*1000,
+                pendingIntent);
     }
 
     private void cancelAlarm() {

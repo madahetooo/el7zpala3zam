@@ -33,31 +33,25 @@ public class language extends AppCompatActivity implements View.OnClickListener 
 
         switch (view.getId()) {
             case R.id.btn_En:
-                Intent intent = new Intent(getBaseContext(), PdfBook.class);
-                startActivity(intent);
                 updateLanguage("en");
-                finish();
                 break;
 
             case R.id.btn_ar:
-                Intent intent2 = new Intent(getBaseContext(), PdfBook.class);
-                startActivity(intent2);
                 updateLanguage("ar");
-                finish();
                 break;
         }
 
     }
 
-    @Override
-    public void recreate() {
-        if (android.os.Build.VERSION.SDK_INT >= 14) {
-            super.recreate();
-        } else {
-            startActivity(getIntent());
-            finish();
-        }
-    }
+//    @Override
+//    public void recreate() {
+//        if (android.os.Build.VERSION.SDK_INT >= 14) {
+//            super.recreate();
+//        } else {
+//            startActivity(getIntent());
+//            finish();
+//        }
+//    }
 
     private void updateLanguage(String language) {
         Locale locale = new Locale(language);
@@ -71,9 +65,18 @@ public class language extends AppCompatActivity implements View.OnClickListener 
         editor.putString("languageToLoad", language);
         editor.apply();
 
-        recreate();
+        intentAction();
+
+        // recreate();
     }
-        @Override
+
+    void intentAction() {
+        Intent intent = new Intent(getBaseContext(), PdfBook.class);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
                 .setIcon(R.drawable.splashscreen)
